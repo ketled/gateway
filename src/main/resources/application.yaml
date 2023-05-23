@@ -5,8 +5,16 @@ spring:
     web-application-type: reactive
   webflux:
     base-path: /mybooking/gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
 server:
   port: 8765
+  servlet:
+    context-path: /mybooking/iam-gateway
 eureka:
   client:
     serviceUrl:
