@@ -1,4 +1,4 @@
-package com.example.gateway;
+package com.example.gateway.config;
 
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.gateway.route.RouteLocator;

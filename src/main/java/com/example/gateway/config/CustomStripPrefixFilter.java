@@ -1,4 +1,4 @@
-package com.example.gateway;
+package com.example.gateway.config;
 
 import org.springframework.cloud.gateway.filter.GatewayFilter;
 import org.springframework.cloud.gateway.filter.GatewayFilterChain;
