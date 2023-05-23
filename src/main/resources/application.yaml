@@ -4,28 +4,12 @@ spring:
   main:
     web-application-type: reactive
   webflux:
-    basePath: /mybooking/gateway
-  cloud:
-    gateway:
-      routes:
-        - id: first
-          uri: http://localhost:8800
-          predicates:
-            - Path=/mybooking/project-one/**
-        - id: second
-          uri: lb://MYBOOKING-PROJECT-TWO
-          predicates:
-            - Path=/mybooking/project-two/**
+    base-path: /mybooking/gateway
 server:
   port: 8765
-  servlet:
-    context-path: /mybooking/gateway
 eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/mybooking/cloud-discovery/eureka
   instance:
     health-check-url-path: /actuator/health
-logging:
-  level:
-    root: DEBUG
