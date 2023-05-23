@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration debug="trued">
+    <appender name="Console" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="net.logstash.logback.encoder.LogstashEncoder" />
+    </appender>
+
+    <logger name="com.example" level="debug" />
+
+    <root level="info">
+        <appender-ref ref="debug" />
+    </root>
+
+</configuration>
